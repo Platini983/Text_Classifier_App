@@ -33,7 +33,8 @@ data = [( "my unity test failed","Software"),
 ("i found some bugs in the code","software"),
 ("i swapped the memory","hardware"),
 ("i had mouse repair","hardware"),
-("i tested the code","software")]
+("i tested the code","software"),
+("i just repair the keyboard","hardware")]
 
 
 # Model Building
