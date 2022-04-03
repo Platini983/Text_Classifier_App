@@ -11,4 +11,3 @@ naive_bayes
 river
 compose
 matplotlib
-message==0.2.1
