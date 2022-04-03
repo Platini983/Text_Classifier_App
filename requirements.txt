@@ -1,0 +1,16 @@
+streamlit
+altair
+plotly
+pandas
+numpy
+joblib
+scikit-learn
+seaborn
+datetime
+naive_bayes
+feature_extraction
+compose
+matplotlib
+create
+message
+encode
