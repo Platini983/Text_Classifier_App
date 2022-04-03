@@ -73,7 +73,7 @@ def main():
     if choice == "Home":
         st.subheader("Home")
         with st.form(key='mlform'):
-            col1,col2 = st.beta_columns([2,1])
+            col1,col2 = st.columns([2,1])
             with col1:
                 message = st.text_area("Message")
                 submit_message = st.form_submit_button(label='predict')
@@ -92,7 +92,7 @@ def main():
             st.success("Data Submitted")
 
 
-            res_col1, res_col2 = st.beta_columns(2)
+            res_col1, res_col2 = st.columns(2)
             with res_col1:
                 st.info("original Text")
                 st.write(message)
@@ -131,17 +131,17 @@ def main():
         c_hardware_proba = alt.Chart(new_df['hardware_proba'].reset_index()).mark_line().encode(x='hardware_proba',y='index')
 
         
-        c1, c2 = st.beta_columns(2)
+        c1, c2 = st.columns(2)
         with c1:
-            with st.beta_expander("Software Probability"):
+            with st.expander("Software Probability"):
                 st.altair_chart(c_software_proba,use_container_width=True)
 
         with c2:
-            with st.beta_expander("Hardwaree Probability"):
+            with st.expander("Hardwaree Probability"):
                 st.altair_chart(c_hardware_proba,use_container_width=True)
 
 
-        with st.beta_expander("Prediction Distribution"):
+        with st.expander("Prediction Distribution"):
             fig2 = plt.figure()
             sns.countplot(x='probability', data=new_df)
             st.pyplot(fig2)
