@@ -11,6 +11,4 @@ naive_bayes
 river
 compose
 matplotlib
-create
 message
-encode
